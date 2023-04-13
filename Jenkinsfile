@@ -32,6 +32,12 @@ pipeline {
   
             }
         }
+
+        stage('Send message to slack') {
+            steps {
+                slackSend channel: 'winnie_ip1', message: '${BUILD_ID} and heroku link is https://enigmatic-ocean-73989.herokuapp.com/', teamDomain: 'winnie-project'
+            }
+        }
          
        
     }
