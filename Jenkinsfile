@@ -35,8 +35,7 @@ pipeline {
 
         stage('Send message to slack') {
             steps {
-                slackSend channel: 'winnie_ip1', message: '${BUILD_ID} and heroku link is https://enigmatic-ocean-73989.herokuapp.com/', teamDomain: 'winnie-project'
-            }
+                slackSend botUser: true, channel: 'winnie_ip1', message: 'The Build number is ${BUILD_ID} and URL is https://enigmatic-ocean-73989.herokuapp.com/', tokenCredentialId: 'cd705c70-2c12-4fc8-a508-4e1e9ac736e5'  }
         }
          
        
