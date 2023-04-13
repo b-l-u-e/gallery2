@@ -7,6 +7,12 @@ pipeline {
     }
 
     stages {
+        stage('Clone') {
+            steps {
+                git 'https://github.com/b-l-u-e/gallery2.git'
+            }
+        }
+
         stage('Build') {
             steps {
                 sh 'npm install'
