@@ -67,7 +67,7 @@ Note: Create a workspace then create slack channel called <YourFirstName>_IP1
 3: After it's installed, click on Manage Jenkins again in the left navigation, and then go to Configure System. Find the Global Slack Notifier Settings section and add the following values:
 
   * Team Subdomain: <workspace name>
-  * ntegration Token Credential ID: Create a secret text credential using <token> as value
+  * Integration Token Credential ID: Create a secret text credential using <token> as value
 
 4: For each Project that you would like receive notifications for, choose Configure from the project's menu.
 
