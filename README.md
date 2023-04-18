@@ -30,7 +30,7 @@ MongoDB Atlas has a free tier, so you won’t need any payment or credit card in
 
 2: Open the terminal in visual studio and type `npm install` to install packages in your local machine
 
-3: Run the application using this command `npm start`
+3: Run the application using this command `npm start` on visual studio
 
 4: On the terminal if the application runs smoothly the application will be listening at http://localhost:5000 
 
